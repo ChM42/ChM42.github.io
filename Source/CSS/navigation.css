@@ -1,0 +1,9 @@
+@charset "utf-8";
+#nav{height:40px;}
+#naviga {width:1100px; display:block;}
+#naviga .mainlevel {background:#652D68; float:left;width:137.5px;padding:9px 0px;}
+#naviga .mainlevel a {color: #ffffff; line-height:22px; display:block; text-align:center}
+#naviga .mainlevel a:hover { color: #ffd800;}
+#naviga .mainlevel ul {display:none; position:absolute;z-index:100;}
+#naviga .mainlevel li {background:#652D68; width:137.5px;border-top:#b334d1 1px solid;padding:5px 0px;}
+#naviga .mainlevel li a {color: #ffffff; line-height:22px; display:block; text-align:center}

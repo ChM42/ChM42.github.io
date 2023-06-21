@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="CSS/Default.css" rel="stylesheet" />
+    <link href="CSS/Focuschart.css" rel="stylesheet" />
+    <link href="CSS/navigation.css" rel="stylesheet" />
+    <script src="js/Focuschart.js"></script>
+    <script src="js/jquery-1.4.2.js"></script>
+    <script src="js/navigation.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <div id="line">
+             <div id="admins">
+                 <asp:LinkButton ID="Stud" runat="server" OnClick="Stud_Click">学生</asp:LinkButton>
+                 <asp:LinkButton ID="Admin" runat="server" OnClick="Admin_Click">管理员</asp:LinkButton>
+             </div>
+         </div>
+    <div id="logo"></div>
+    <div id="nav">
+        <ul id="naviga">
+            <li class="mainlevel" id="mainlevel_01"><a href="Default.aspx">本站首页</a></li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=1">学院概况</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=1&navi_id=1">学院简介</a></li>
+                    <li><a href="Second_list.aspx?nav_id=1&navi_id=2">学院文化</a></li>
+                    <li><a href="Second_list.aspx?nav_id=1&navi_id=3">历史沿革</a></li>
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=2">机构设置</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=2&navi_id=4">机构设置</a></li>
+                    <li><a href="Second_list.aspx?nav_id=2&navi_id=5">学院领导</a></li>
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=3">通知公告</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=3&navi_id=6">工作动态</a></li>
+                    <li><a href="Second_list.aspx?nav_id=3&navi_id=7">学院新闻</a></li>
+                    <li><a href="Second_list.aspx?nav_id=3&navi_id=8">学院公告</a></li>
+                    <li><a href="Second_list.aspx?nav_id=3&navi_id=9">学生风采</a></li>
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=4">师资队伍</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=4&navi_id=10">教师简介</a></li>
+                    <li><a href="Second_list.aspx?nav_id=4&navi_id=11">教师风采</a></li>
+                    <li><a href="Second_list.aspx?nav_id=4&navi_id=12">教学工作</a></li>
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=5">人才培养</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=5&navi_id=13">本科生</a></li>
+                    <li><a href="Second_list.aspx?nav_id=5&navi_id=14">研究生</a></li>
+                    <li><a href="Second_list.aspx?nav_id=5&navi_id=15">专业学位</a></li>
+                    <li><a href="Second_list.aspx?nav_id=5&navi_id=16">国际联合办学</a></li>
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=6">科学研究</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=6&navi_id=17">科研所</a></li>
+                    <li><a href="Second_list.aspx?nav_id=6&navi_id=18">科研公告</a></li>
+                    <li><a href="Second_list.aspx?nav_id=6&navi_id=19">领域成果</a></li>
+                   
+                </ul>
+            </li>
+
+            <li class="mainlevel" id="mainlevel_01">
+                <a href="List.aspx?nav_id=7">招生就业</a>
+                <ul id="sub_01">
+                    <li><a href="Second_list.aspx?nav_id=7&navi_id=20">招生简介</a></li>
+                    <li><a href="Second_list.aspx?nav_id=7&navi_id=21">就业信息</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div> <div id="Clear_floats"></div><!--清除浮动影响-->
+    <div id="contents">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="Clear_floats"></div><!--清除浮动影响-->
+    <div id="footer">
+        <div id="Copy">
+            <h4>Copyright©2022&nbsp;&nbsp;版权所有</h4>
+            <h3>经济管理学院</h3>
+        </div>
+    </div>
+    <div id="Clear_floats"></div><!--清除浮动影响-->
+
+    </div>
+    </form>
+</body>
+</html>

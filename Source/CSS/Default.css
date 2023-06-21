@@ -1,0 +1,59 @@
+﻿/*清除固有样式*/
+body, ul, li, div, img, h1, h2, h3, p, ol, h4, h5, h6, fieldset, legend {padding: 0;margin: 0;}
+/*网页居中显示1100px*/
+#logo,#nav,#navi,#contents, #con_top, #con_middle, #con_bottom, #line, #footer, #Clear_floats,#middle_top,#middle_bottom{ width: 1100px;margin: 0 auto;}
+ul li {list-style: none;}
+a:link {;text-decoration: none;}
+ 
+/*消除浮动影响*/
+#Clear_floats {clear: both;}
+
+#line {clear: both; height:28px;background: #652D68;}
+#admins{float:right;font-size: 12px;padding:5px 8px;color: #B1ACB2;}
+#admins a:link{color:#ffffff;}
+/*logo*/
+#logo {height:110px;background:url(../images/logo.png) no-repeat;}
+/*contents，这里我们将其分为三部分top,middle,bottom，top为焦点图，middle为左右两分的列表，bottom为带有日历形式的列表*/
+
+/*con_middle，将middle分为top,bottom上下两部分，二者又分别分有left，right左右两部分*/
+#con_middle{height:470px;}
+#con_middle a{padding-left:15px;}
+#middle_top{background-color:#E9ECF1;height:265px;margin-top:5px;}
+#top_left,#top_right{height:245px;width:550px;margin-top:20px;}
+
+#middle_bottom{background-color:#ffffff;height:205px;}
+#bottom_left,#bottom_right{height:185px;width:550px;margin-top:20px;}
+
+#top_left,#bottom_left{float:left}
+#top_right,#bottom_right{float:right;}
+/*标题*/
+#mi_tit{width:450px;margin:0px 50px;border-bottom: 2px solid #8b3886;}
+#mi_tit span{font-size: 20px;color: #8b3886;font-weight: bold;}
+#mi_tit a,#mi_list span{font-size:12px;float:right;padding-right:15px;color:#B1ACB2}
+#mi_tit a:hover{color:#652D68}
+/*列表*/
+#mi_list{width:450px;margin:0px 50px;}
+#mi_list li{margin:7.5px 5px;}
+#mi_list li a{font-size: 14px;color: #575757;line-height: 20px;height: 20px;}
+#mi_list img{padding-right:10px;}
+#mi_list li a:hover{color:#652D68;}
+
+
+#con_bottom{height:160px;background-color:#E9ECF1;}
+#bo_tit{width:1100px;height:48px;border-bottom: 2px solid #8b3886;text-align:center;}
+#bo_tit a{font-size: 25px;color: #8b3886;font-weight: bold;line-height:60px;}
+#bo_list{width:900px;margin:10px 100px;}
+
+#bolist_left,#bolist_middle,#bolist_right{width:270px;margin:0px 15px;height:100px;}
+#bolist_left,#bolist_middle{float:left;}
+#date{float:left;height: 48px; width: 48px;border: 1px solid #8b3886;text-align: center;margin:20px 0px;}
+#date h3{font-size: 16px; color: #fff;background: #8b3886;height: 25px; line-height: 25px;}
+#txt{font-family: "Microsoft YaHei";font-size: 12px;line-height: 24px;height: 100px;margin:0px 10px;float:right;width:200px;}
+#txt h3{font-weight: bold;color: #8b3886;font-size: 14px;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+#txt a{color: #8b3886;}
+#bolist_right{float:right ;}
+
+/*footer*/
+#footer{text-align:center;height:98px;background-color:#652D68}
+#footer h4,#footer h3{color:#ffffff;padding:5px 0px;}
+#Copy{padding:20px 0px;}
